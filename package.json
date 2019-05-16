@@ -4,7 +4,7 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://jegq6b@dev.azure.com/jegq6b/Mean%20Stack%20Class/_git/FreshStart-DatingApp"
+    "url": "https://comp.umsl.edu/gitlab/zdgx6/project2.git"
   },
   "dependencies": {
     "bcrypt": "^3.0.5",
