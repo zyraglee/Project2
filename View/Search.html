@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>View/Search Match</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body, html {
+            height: 100%
+        }
+
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+    </style>
+</head>
+<body bgcolor=#9E5E6F>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="http://localhost:8080/Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="http://localhost:8080/Register" class="w3-bar-item w3-button">REGISTER</a>
+    <a href="http://localhost:8080/Profile" class="w3-bar-item w3-button">PROFILE</a>
+    <a href="http://localhost:8080/Search.html" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="http://localhost:8080/Login" class="w3-bar-item w3-button w3-right">LOGOUT</a>
+
+</div>
+
+<!-- Find Match Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="find">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Find "The One" ♥ </h1>
+        <div class="w3-row">
+            <div class="w3-col" style="width:55%">
+                Interests
+                <form action="">
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block;line-height:2em;">
+                            <input type="checkbox" name="type" value="sports"/>&nbsp; sports &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="gaming"/>&nbsp; gaming &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                           <input type="checkbox" name="type" value="nature"/>&nbsp; nature &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="socializing"/>&nbsp; socializing &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="singing"/>&nbsp; singing
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="reading"/>&nbsp; reading &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="music"/>&nbsp; music &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="painting"/>&nbsp; painting &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="computers"/>&nbsp; computers &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="computers"/>&nbsp; wrestling &nbsp;&nbsp;
+                        </span>
+                    </label>
+                    <label>
+                        <span style="white-space:nowrap; display:inline-block">
+                            <input type="checkbox" name="type" value="other"/>&nbsp; Other
+                        </span>
+                    </label>
+                    <br>
+                    <label>
+                        <span class="w3-text-white w3-hide-small" style="font-size:30px">Add more to expand your search:<br></span>
+                    </label>
+                    <textarea rows="1" cols="55" placeholder="Hobbies and Interests">  </textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="w3-col" style="width:10%">
+                &nbsp;
+            </div>
+            <div class="w3-col" style="width:40%">
+                <form action="" target="_blank">
+                    <label for="state"> Find your match by state </label>
+                    <select id="state" style="width: 80%">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </form>
+                <p><input type="submit" value="Submit♥ "></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Powered by <a href="loveBook.html" title="W3.CSS" target="_blank" class="w3-hover-text-green">Love Book</a></p>
+</footer>
+</body>
+</html>

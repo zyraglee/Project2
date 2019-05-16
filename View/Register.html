@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Love Book Registration page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../Style/Register.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<script src="../js/register.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+    body, html {
+        height: 100%
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Amatic SC", sans-serif
+    }
+    input{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+
+    }
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="http://localhost:8080/Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="http://localhost:8080/Register" class="w3-bar-item w3-button">REGISTER</a>
+    <a href="http://localhost:8080/Login" class="w3-bar-item w3-button">LOGIN</a>
+</div>
+
+
+
+<!-- Register Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="register">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Registration</h1>
+
+        <div class="w3-row">
+
+            <!-- Login Form -->
+            <div class="w3-col" style="width:55%">
+                <p>While there’s nothing wrong with being happily single or casually dating,
+                    this is the place for people who have realised that they’re looking for something more serious.
+                    It’s for people who are looking for love and commitment.
+                    This site gives you the opportunity to explore, relax, and experience before you decide on who’s
+                    “the one.
+                </p>
+            </div>
+            <div class="w3-col" style="width:5%">
+                &nbsp;
+            </div>
+            <div class="w3-col" style="width:40%">
+                <form method="POST" id="registrationForm">
+                    <h1>Sign-up Today</h1>
+
+                    <label for="email"><b>Email</b></label><br>
+                 <input type="text" id="email" size = "37" placeholder="Enter Email" name="email   " required>
+
+                  <br>  <label for="password"><b>Password</b></label><br>
+                    <input type="password" id="password" size = "37" placeholder="Enter Password" name="psw" required>
+                  <br>  <label> <input type="checkbox" onclick="showPwd()">Show Password</label>
+                    <a href="javascript:void(0);" class="w3-button w3-light-grey w3-block"
+                       role="button" onclick="ajaxSubmitForm();">
+                        Register
+                    </a>
+                    <label id="msg"></label>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- END w3-content -->
+
+<script>
+
+    function showPwd() {
+        let x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Powered by <a href="http://localhost:8080/Home" title="W3.CSS" target="_blank" class="w3-hover-text-green">Love Book</a></p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+</body>
+</html>

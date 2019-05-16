@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Book Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body, html {
+            height: 100%
+        }
+
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+        input{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+
+        }
+
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            border: 2px solid gray;
+            color: gray;
+            background-color: white;
+            padding: 8px 115px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+        }
+
+
+    </style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="http://localhost:8080/Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="http://localhost:8080/Register" class="w3-bar-item w3-button">REGISTER</a>
+    <a href="http://localhost:8080/Profile" class="w3-bar-item w3-button">PROFILE</a>
+    <a href="http://localhost:8080/Search" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="http://localhost:8080/Login" class="w3-bar-item w3-button w3-right">LOGOUT</a>
+
+</div>
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+        <!-- Add content later -->
+        <br>
+        <br>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+        <!-- Introduction menu -->
+        <div class="w3-col l4">
+            <!-- About Card -->
+            <div class="w3-card w3-margin w3-margin-top">
+                <img src="../image/profile.jpg" style="width:100%" >
+                <img id="myImg" src="#" style="width:100%" ><br>
+                <div class="upload-btn-wrapper">
+                    <button class="btn">Upload new photo...</button>
+                    <input type='file' />
+                </div>
+                <div class="w3-container w3-white">
+                    <h4><b>Zyra Glee <span class="w3-opacity"> 28</span></b></h4>
+                    <p>Well I'd probably smile and say hi to you if we were stangers passing on the street.
+                    I love to play video games and a console type of gamer. I love Battlefiled, Apex, Call of Duty(especiall ZOMBIES),
+                    and Mortal Kombat. I also love little things like flowers and butterflies</p>
+                </div>
+            </div><hr>
+
+            <!-- Labels / tags -->
+            <div class="w3-card w3-margin">
+                <div class="w3-container w3-padding">
+                    <h4>Interest </h4>
+                </div>
+                <div class="w3-container w3-white">
+                    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Philippines</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Movie</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Swimming</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nature</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Outdoors</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fun</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Christian</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Party</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Photography</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Outdoors</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hiking</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Camping</span>
+
+                    </p>
+                </div>
+            </div>
+            <!-- Posts -->
+            <div class="w3-card w3-margin">
+                <div class="w3-container w3-padding">
+                    <h4>Instagram Post</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                    <li class="w3-padding-16">
+                        <img src="../image/salty.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Lorem</span><br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                    <li class="w3-padding-16">
+                        <img src="../image/food.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Ipsum</span><br>
+                        <span>Praes tinci sed</span>
+                    </li>
+                    <li class="w3-padding-16">
+                        <img src="../image/park.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Dorum</span><br>
+                        <span>Ultricies congue</span>
+                    </li>
+                    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                        <img src="../image/azalea.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Mingsum</span><br>
+                        <span>Lorem ipsum dipsum</span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+
+            <!-- END Introduction Menu -->
+        </div>
+
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <img src="../image/mag.jpg" alt="Nature" style="width:100%" >
+                <div class="w3-container">
+                    <h3><b>About Me</b></h3>
+                    <h5><span class="w3-opacity" style="font-size: small; color: deepskyblue"> Verified Profile</span></h5>
+                </div>
+
+                <div class="w3-container">
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Senior</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Saint Louis, MO</p>
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> May 15, 1991</p>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <div class="w3-row">
+                        <div class="w3-col m8 s12">
+                            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>MESSAGE ME »</b></button></p>
+                        </div>
+                        <div class="w3-col m4 w3-hide-small">
+                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-container">
+                    <h3><b>Photos</b></h3>
+                </div>
+
+                <div class="w3-container">
+                    <div class="w3-third">
+                        <img src="../image/magnolia.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+                    </div>
+
+                    <div class="w3-third">
+                        <img src="../image/cloud.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    </div>
+
+                    <div class="w3-third">
+                        <img src="../image/salty.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Powered by <a href="http://localhost:8080/Home " title="W3.CSS" target="_blank" class="w3-hover-text-green">Love Book</a></p>
+</footer>
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('input[type="file"]').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var img = document.querySelector('img');  // $('img')[0]
+                img.src = URL.createObjectURL(this.files[0]); // set src to file url
+                img.onload = imageIsLoaded; // optional onload event listener
+            }
+        });
+    });
+
+    function imageIsLoaded(e) { alert(e); }
+</script>
+</body>
+</html>

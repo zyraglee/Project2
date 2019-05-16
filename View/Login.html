@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Love Book Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta author="Zyra De Los Reyes">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<script src="../js/login.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+    body, html {
+        height: 100%
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Amatic SC", sans-serif
+    }
+    .inputRes {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="http://localhost:8080/Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="http://localhost:8080/Register" class="w3-bar-item w3-button">REGISTER</a>
+    <a href="http://localhost:8080/Login" class="w3-bar-item w3-button">LOGIN</a>
+
+</div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xxlarge">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Login</h1>
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Login Form -->
+            <div class="w3-col" style="width:50%">
+                <form>
+
+                    <label for="email"><b>Email</b></label><br>
+                    <input class = "inputRes" size = "47" type="text" id="email" placeholder="Enter Email" name="email" required><br>
+
+                    <label for="password"><b>Password</b></label><br>
+                    <input class = "inputRes"size = "47" type="password" id="password" placeholder="Enter Password" name="psw" required><br>
+                    <label> <input type="checkbox" onclick="showPwd()">Show Password</label>
+
+                    <a href="javascript:void(0);" class="w3-button w3-light-grey w3-block"
+                       role="button" onclick="ajaxSubmitForm();">
+                        Login
+                    </a>
+                    <label id="msg"></label>
+                </form>
+            </div>
+
+            <div class="w3-col" style="width:10%">
+                &nbsp;
+            </div>
+            <div class="w3-col" style="width:40%">
+                <p>"The best love is the kind that awakens the soul; that makes us reach for more, that plants the fire
+                    in our hearts and brings peace to our minds. That’s what I hope to give you forever."
+                    — The Notebook</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Powered by <a href="http://localhost:8080/Home" title="W3.CSS" target="_blank" class="w3-hover-text-green">Love Book</a></p>
+</footer>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+<script>
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") === -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    function showPwd() {
+        let x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+</body>
+</html>

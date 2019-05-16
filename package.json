@@ -1,0 +1,23 @@
+{
+  "name": "project2_cs4011",
+  "version": "2.0.0",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://jegq6b@dev.azure.com/jegq6b/Mean%20Stack%20Class/_git/FreshStart-DatingApp"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "logger": "0.0.1",
+    "mongoose": "^5.4.19",
+    "multer": "^1.4.1",
+    "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "This is the project repo for the first project in the client side technologies course. We will be creating a website using node.js, Angular, MongoDB, and react.",
+  "devDependencies": {},
+  "author": "Zyra De Los Reyes",
+  "license": "ISC"
+}
